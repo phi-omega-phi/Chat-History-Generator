@@ -1,0 +1,36 @@
+<head>
+	<script src="Chat-History-Generator.js"></script>
+	<link rel="stylesheet" href="Chat-History-Generator.css">
+</head>
+<body>
+	<div id="itdct">
+		<h1>QQ Chat History Generator</h1>
+		<h1 style="font-size: 150% !important;">Powered By dottle And 0and1story</h1>
+		<p>This is a chat history generator for QQ. Just upload the avatar and input the text, and you will get your customised QQ styled chat history!</p>
+		<p>Press the avatar to delete. Press the "Add" to add.</p>
+		<p>若没有图片网址，推荐使用<a href="imgchr.com" style="color:111111;text-decoration: none;">路过图床</a></p>
+	</div>
+	<br>
+	<div id="generator">
+		<div id="left">
+			<div class="chat-piece" onclick="this.remove()">
+				<img class="avatar" src="https://s2.ax1x.com/2019/10/19/KnDt4s.jpg">
+				<img class="strange_thing" src="https://s2.ax1x.com/2019/10/19/Kn60JJ.png">
+				<div class="border">
+					<span class="text">lyc垃圾</span>
+				</div>
+			</div>
+		</div>
+		<div id="input">
+			<div class="input-form" avatar>
+				<label>Avatar: </label>
+				<input type="url" avatar>
+			</div>
+			<div class="input-form" text>
+				<label>Text: </label>
+				<input type="text" text>
+			</div>
+			<button onclick="addHistory()">Add</button>
+		</div>
+	</div>
+</body>
